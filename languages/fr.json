@@ -1,0 +1,18 @@
+{
+    "app": {
+        "name": "QRCode",
+        "description": "Affichez un QRCode sur votre écran"
+    },
+    "modules": {
+        "qrcode": {
+            "name": "QRCode",
+            "description": "Affichez un QRCode sur votre écran",
+            "options": {
+                "url": "URL du QRCode",
+                "description": "Description",
+                "background_color": "Couleur de fond",
+                "qrcode_color": "Couleur du QRCode et du texte"
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+# YAML
+id: app-qrcode-comeen-play
+name: app.name
+description: app.description
+logo: fas fa-qrcode
+version: 0.2.0
+channel: stable
+api-level: 1
+color: red
+author:
+    name: Comeen
+    email: support@comeen.com
+modules:
+    - name: modules.qrcode.name
+      logo: fas fa-qrcode
+      identifier: qrcode
+      color: red
+      type: slide
+      description: modules.qrcode.description
+      options:
+          vue:
+              component: src/QRCode/QRCode.ts
+              options: src/QRCode/QRCodeOptions.ts
+          php:
+              handler: \Comeen\QRCode\QRCode\QRCodeHandler
