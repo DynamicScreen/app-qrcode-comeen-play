@@ -70,18 +70,14 @@ export default class QRCodeSlideModule extends SlideModule {
       qrCodeElement.value.innerHTML = ''
     });
 
-    return () => h("div", {
-      class: "container"
-    }, [
-        h("div", {
-          class: `flex w-full h-full flex-col justify-center items-center bg-${ColorHelper.getClass(background_color.value)}`
-        }, [
-          h('div', {
-            ref: qrCodeElement
-          }),
-          h('div', { class: `mt-8 text-2xl text-${ColorHelper.getClass(qrcode_color.value)}` }, description.value)
-        ])
+    return () =>
+      h("div", {
+        class: `flex w-full h-full flex-col justify-center items-center bg-${ColorHelper.getClass(background_color.value)}`
+      }, [
+        h('div', {
+          ref: qrCodeElement
+        }),
+        h('div', { class: `mt-8 text-2xl text-${ColorHelper.getClass(qrcode_color.value)}` }, description.value)
       ])
-    }
   }
 }
