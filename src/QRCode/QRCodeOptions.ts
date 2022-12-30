@@ -19,6 +19,8 @@ export default class QRCodeOptionsModule extends SlideOptionsModule {
 
     const { Field, TextInput, TextArea, ColorPicker } = this.context.components
 
+    context.updateAutoName("QRCode")
+
     return () =>
       h("div", {}, [
         h(Field, { label: this.t('modules.qrcode.options.url') }, [
